@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mercenary Game : UI</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Mercenary Game</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Overview_10452995.html">Overview</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Game-Optimization_12222465.html">Game Optimization</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Tick-Optimization_12386305.html">Tick Optimization</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Mercenary Game : UI
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Milad Khodakarami</span>, last modified on Jul 12, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p /><p>Setup Timer in “WBP_LPSP_Interface”</p><p>UnBind Every Widget Element and Update it trough the “Update UI” Event</p><p>Use A Progress Bar To show the Health Of Character</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/13107202/12419114.png" data-image-src="attachments/13107202/12419114.png" data-height="685" data-width="1578" data-unresolved-comment-count="0" data-linked-resource-id="12419114" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-140708.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="13107202" data-linked-resource-container-version="2" data-media-id="f2a194cb-fa99-4fd2-9630-2907649131b0" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/13107202/12812301.png" data-image-src="attachments/13107202/12812301.png" data-height="688" data-width="1578" data-unresolved-comment-count="0" data-linked-resource-id="12812301" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-140749.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="13107202" data-linked-resource-container-version="2" data-media-id="74ec21a0-338c-47dc-9bb8-b47340092e46" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/13107202/12845061.png" data-image-src="attachments/13107202/12845061.png" data-height="690" data-width="1579" data-unresolved-comment-count="0" data-linked-resource-id="12845061" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-140929.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="13107202" data-linked-resource-container-version="2" data-media-id="ac612fbb-1427-4148-bdb2-ba741d0116a7" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/13107202/12517403.png" data-image-src="attachments/13107202/12517403.png" data-height="682" data-width="1578" data-unresolved-comment-count="0" data-linked-resource-id="12517403" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-141016.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="13107202" data-linked-resource-container-version="2" data-media-id="818a735e-c89c-4af0-90f9-20c613a1d493" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/13107202/12976168.png" data-image-src="attachments/13107202/12976168.png" data-height="682" data-width="1577" data-unresolved-comment-count="0" data-linked-resource-id="12976168" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-141109.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="13107202" data-linked-resource-container-version="2" data-media-id="cfe8109c-afc2-41e4-baf1-d8d3538c7b28" data-media-type="file"></span><p />
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/13107202/12877838.png">image-20230712-140702.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/13107202/12419114.png">image-20230712-140708.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/13107202/12681233.png">image-20230712-140749.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/13107202/12812301.png">image-20230712-140749.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/13107202/12812308">Invalid file id - ac612fbb-1427-4148-bdb2-ba741d0116a7</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/13107202/12845061.png">image-20230712-140929.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/13107202/12386404">Invalid file id - 818a735e-c89c-4af0-90f9-20c613a1d493</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/13107202/12517403.png">image-20230712-141016.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/13107202/12976168.png">image-20230712-141109.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Nov 13, 2023 16:37</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

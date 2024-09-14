@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mercenary Game : Update BP_LPSP_Projectile Actor</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Mercenary Game</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Overview_10452995.html">Overview</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Multiplayer-Document_10125313.html">Multiplayer Document</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Mercenary Game : Update BP_LPSP_Projectile Actor
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Milad Khodakarami</span>, last modified on Jul 04, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>First we need to add few thing to these function in picture below</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/11239427/10911768.png" data-image-src="attachments/11239427/10911768.png" data-height="625" data-width="1141" data-unresolved-comment-count="0" data-linked-resource-id="10911768" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230704-073351.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="11239427" data-linked-resource-container-version="2" data-media-id="d20c18c0-1006-4ef4-b93a-a78bee91dd5d" data-media-type="file"></span><p /><ol start="1"><li><p>update “Apply Radial Damage“ function from Utility Explosion Component</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/11239427/11337734.png" data-image-src="attachments/11239427/11337734.png" data-height="693" data-width="1144" data-unresolved-comment-count="0" data-linked-resource-id="11337734" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230704-074013.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="11239427" data-linked-resource-container-version="2" data-media-id="5554b424-f737-45aa-9f0e-96ffd3eae0dd" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/11239427/11304979.png" data-image-src="attachments/11239427/11304979.png" data-height="689" data-width="1140" data-unresolved-comment-count="0" data-linked-resource-id="11304979" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230704-074120.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="11239427" data-linked-resource-container-version="2" data-media-id="2296c7db-f03c-4e0e-a64a-65c3f587ab92" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/11239427/11239438.png" data-image-src="attachments/11239427/11239438.png" data-height="692" data-width="1142" data-unresolved-comment-count="0" data-linked-resource-id="11239438" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230704-074242.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="11239427" data-linked-resource-container-version="2" data-media-id="eaae64cd-1301-471a-b65c-b32e5ed5e9a5" data-media-type="file"></span><p /></li><li><p>update “Apply Point Damage“ function from Utility Explosion Component</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/11239427/11304989.png" data-image-src="attachments/11239427/11304989.png" data-height="689" data-width="1145" data-unresolved-comment-count="0" data-linked-resource-id="11304989" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230704-074900.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="11239427" data-linked-resource-container-version="2" data-media-id="f6056a9a-a708-49be-aeb2-ff83740e4682" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/11239427/11075615.png" data-image-src="attachments/11239427/11075615.png" data-height="690" data-width="1141" data-unresolved-comment-count="0" data-linked-resource-id="11075615" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230704-075121.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="11239427" data-linked-resource-container-version="2" data-media-id="7c14bc15-d5f4-4a07-87a6-3dca5ee238dd" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/11239427/11010070.png" data-image-src="attachments/11239427/11010070.png" data-height="685" data-width="1142" data-unresolved-comment-count="0" data-linked-resource-id="11010070" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230704-075253.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="11239427" data-linked-resource-container-version="2" data-media-id="e4f6b319-c925-4b01-8b24-e54a66f437d9" data-media-type="file"></span><p /></li><li><p>you got get the “Hit actor“ Reference from this node</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/11239427/10878994.png" data-image-src="attachments/11239427/10878994.png" data-height="621" data-width="1138" data-unresolved-comment-count="0" data-linked-resource-id="10878994" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230704-075653.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="11239427" data-linked-resource-container-version="2" data-media-id="88208cee-d304-45fe-891a-90dc1698714c" data-media-type="file"></span><p /></li></ol><p /><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>For preventing possible errors, fill “Owner” and “Instigator” property when Projectile Spawned by BP_LPSP_WEP</p></div></div><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/11239427/10911781.png" data-image-src="attachments/11239427/10911781.png" data-height="621" data-width="1146" data-unresolved-comment-count="0" data-linked-resource-id="10911781" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230704-080424.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="11239427" data-linked-resource-container-version="2" data-media-id="cc632cc9-c61b-46f3-bb5c-ae7d9a551448" data-media-type="file"></span><p /><p />
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/10911768.png">image-20230704-073351.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/11337734.png">image-20230704-074013.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/11141131.png">image-20230704-074103.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/11370497.png">image-20230704-074111.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/11304979.png">image-20230704-074120.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/11403265.png">image-20230704-074242.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/11239438.png">image-20230704-074242.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/11304989.png">image-20230704-074900.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/11075615.png">image-20230704-075121.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/11042855.png">image-20230704-075223.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/11010070.png">image-20230704-075253.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/10878994.png">image-20230704-075653.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/11239427/10911781.png">image-20230704-080424.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Nov 13, 2023 16:37</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

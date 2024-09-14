@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mercenary Game : Character Pool</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Mercenary Game</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Overview_10452995.html">Overview</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Game-Optimization_12222465.html">Game Optimization</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Object-Pooling_12222477.html">Object Pooling</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Mercenary Game : Character Pool
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Milad Khodakarami</span>, last modified on Jul 12, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <ol start="1"><li><p>Setup Player Character</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386363/12517397.png" data-image-src="attachments/12386363/12517397.png" data-height="686" data-width="1627" data-unresolved-comment-count="0" data-linked-resource-id="12517397" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-133706.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386363" data-linked-resource-container-version="3" data-media-id="839c3915-6ef6-4ae3-b7d4-e76058da7637" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386363/12910616.png" data-image-src="attachments/12386363/12910616.png" data-height="620" data-width="1177" data-unresolved-comment-count="0" data-linked-resource-id="12910616" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-133934.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386363" data-linked-resource-container-version="3" data-media-id="f30d73e2-d72e-49e7-848f-54dba7d9235c" data-media-type="file"></span><p /></li><li><p>add character pool component to “Core_GM” Game mode actor</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386363/12419108.png" data-image-src="attachments/12386363/12419108.png" data-height="371" data-width="296" data-unresolved-comment-count="0" data-linked-resource-id="12419108" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-134421.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386363" data-linked-resource-container-version="3" data-media-id="929edd55-2c11-41c8-acb7-afa34ce83e0a" data-media-type="file"></span><p /></li><li><p>Setup character Pool Component in Construction Script</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386363/12255274.png" data-image-src="attachments/12386363/12255274.png" data-height="644" data-width="1628" data-unresolved-comment-count="0" data-linked-resource-id="12255274" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-134703.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386363" data-linked-resource-container-version="3" data-media-id="28935755-87c0-493e-be86-75e8c511f5b7" data-media-type="file"></span><p /></li><li><p>Update “FS_RespawnPlayer” Function</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386363/12746773.png" data-image-src="attachments/12386363/12746773.png" data-height="621" data-width="1180" data-unresolved-comment-count="0" data-linked-resource-id="12746773" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-135141.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386363" data-linked-resource-container-version="3" data-media-id="c8eb1fe9-00da-4992-8942-5a3c6844b1af" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386363/12779533.png" data-image-src="attachments/12386363/12779533.png" data-height="614" data-width="1179" data-unresolved-comment-count="0" data-linked-resource-id="12779533" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-135242.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386363" data-linked-resource-container-version="3" data-media-id="2371d405-dfd5-4c79-bb89-7bc7e04c4cc3" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386363/12943373.png" data-image-src="attachments/12386363/12943373.png" data-height="645" data-width="1181" data-unresolved-comment-count="0" data-linked-resource-id="12943373" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-135329.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386363" data-linked-resource-container-version="3" data-media-id="30a834ba-0522-4aac-ab94-f2062b977d74" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386363/12779539.png" data-image-src="attachments/12386363/12779539.png" data-height="644" data-width="1181" data-unresolved-comment-count="0" data-linked-resource-id="12779539" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-135417.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386363" data-linked-resource-container-version="3" data-media-id="99ce7cbe-ba74-451d-b6e7-a7584091dda7" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386363/12386387.png" data-image-src="attachments/12386363/12386387.png" data-height="646" data-width="1181" data-unresolved-comment-count="0" data-linked-resource-id="12386387" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-135549.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386363" data-linked-resource-container-version="3" data-media-id="6108de3a-74ee-438b-bbab-1d78b52d3c12" data-media-type="file"></span><p /><p /></li></ol>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386363/12517397.png">image-20230712-133706.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386363/12451868.png">image-20230712-133854.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386363/12910616.png">image-20230712-133934.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386363/12419108.png">image-20230712-134421.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386363/12255274.png">image-20230712-134703.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386363/12746773.png">image-20230712-135141.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386363/12779533.png">image-20230712-135242.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386363/12943373.png">image-20230712-135329.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386363/12779539.png">image-20230712-135417.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386363/12386387.png">image-20230712-135549.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Nov 13, 2023 16:37</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

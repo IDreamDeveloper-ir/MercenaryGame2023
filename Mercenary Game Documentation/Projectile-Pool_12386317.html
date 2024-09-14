@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mercenary Game : Projectile Pool</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Mercenary Game</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Overview_10452995.html">Overview</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Game-Optimization_12222465.html">Game Optimization</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Object-Pooling_12222477.html">Object Pooling</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Mercenary Game : Projectile Pool
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Milad Khodakarami</span>, last modified on Jul 12, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <ol start="1"><li><p>change parent class to “Pool Actor” &amp; update “Destroy Event”</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12517377.png" data-image-src="attachments/12386317/12517377.png" data-height="1080" data-width="1920" data-unresolved-comment-count="0" data-linked-resource-id="12517377" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-074820.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="7abd0915-74bc-47c3-9cc0-71c9cdc74a4c" data-media-type="file"></span><p /></li><li><p>Create “Projectile Pool” Actor And Add Object Pool Component to it as many as needs</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12451842.png" data-image-src="attachments/12386317/12451842.png" data-height="615" data-width="292" data-unresolved-comment-count="0" data-linked-resource-id="12451842" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-075415.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="85c0e68c-f808-41eb-af63-b2afbdd187ea" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12681218.png" data-image-src="attachments/12386317/12681218.png" data-height="252" data-width="774" data-unresolved-comment-count="0" data-linked-resource-id="12681218" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-075916.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="7b18d7a5-f0a3-49a4-b2bc-533e00ed22eb" data-media-type="file"></span><p /></li><li><p>make an array variable of object Pool component’s</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12386337.png" data-image-src="attachments/12386317/12386337.png" data-height="474" data-width="391" data-unresolved-comment-count="0" data-linked-resource-id="12386337" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-081346.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="9d0f2511-36f9-4897-bfc6-63701867642a" data-media-type="file"></span></li><li><p>Create “Get Projectile Pool” Function</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12746755.png" data-image-src="attachments/12386317/12746755.png" data-height="623" data-width="1103" data-unresolved-comment-count="0" data-linked-resource-id="12746755" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-081008.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="cc484f1a-e965-406d-b3db-9b9f5c5edd39" data-media-type="file"></span><p /></li><li><p>Create “search for Projectile Pool” Event in “BP_LPSP_PController” Actor</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12779524.png" data-image-src="attachments/12386317/12779524.png" data-height="625" data-width="1076" data-unresolved-comment-count="0" data-linked-resource-id="12779524" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-083123.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="f35bfcb8-32e8-440e-addc-4ced8883630e" data-media-type="file"></span><p /></li><li><p>Add “Search for Projectile Pool” to On Possess Event</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12877826.png" data-image-src="attachments/12386317/12877826.png" data-height="618" data-width="1076" data-unresolved-comment-count="0" data-linked-resource-id="12877826" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-083615.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="9b64b6f7-690d-4789-a1df-68a0a94293b5" data-media-type="file"></span><p /></li><li><p>update “CGraph Spawn Projectile” in “BP_LPSP_WEP” Actor for spawn projectile from pool</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12582916.png" data-image-src="attachments/12386317/12582916.png" data-height="616" data-width="1095" data-unresolved-comment-count="0" data-linked-resource-id="12582916" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-090404.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="a5fc8938-caa6-4019-abbf-f7151cd7305e" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12320784.png" data-image-src="attachments/12386317/12320784.png" data-height="620" data-width="1094" data-unresolved-comment-count="0" data-linked-resource-id="12320784" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-090547.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="522defe0-980a-493f-b00c-ee91ca482a58" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12910593.png" data-image-src="attachments/12386317/12910593.png" data-height="618" data-width="1090" data-unresolved-comment-count="0" data-linked-resource-id="12910593" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-090636.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="d9a5bb5f-38aa-4a7d-887a-a9fe38533e3f" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12910599.png" data-image-src="attachments/12386317/12910599.png" data-height="616" data-width="1093" data-unresolved-comment-count="0" data-linked-resource-id="12910599" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-090732.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="3d760792-89ec-4065-a4bc-9123fe181703" data-media-type="file"></span><p /></li></ol><p /><h1 id="ProjectilePool-SpawnGrenade">Spawn Grenade</h1><p>   Try Launch Grenade function in BP_LPSP_PCH</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/13008898" data-image-src="attachments/12386317/13008898" data-height="620" data-width="1177" data-unresolved-comment-count="0" data-linked-resource-id="13008898" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Invalid file id - 0a80bedf-0893-4b42-8c7f-90df65f75a06" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="0a80bedf-0893-4b42-8c7f-90df65f75a06" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/12386317/12419085.png" data-image-src="attachments/12386317/12419085.png" data-height="619" data-width="1179" data-unresolved-comment-count="0" data-linked-resource-id="12419085" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20230712-093031.png" data-base-url="https://idreamdeveloper.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="12386317" data-linked-resource-container-version="4" data-media-id="e0eaf019-ce24-4113-adf0-0578546e2fa4" data-media-type="file"></span><p />
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12484611">Invalid file id - 7abd0915-74bc-47c3-9cc0-71c9cdc74a4c</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12517377.png">image-20230712-074820.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12451842.png">image-20230712-075415.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12681218.png">image-20230712-075916.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12746755.png">image-20230712-081008.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12812290">Invalid file id - 8258ffb9-31fc-401f-b8be-a983717ee86f</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12386331.png">image-20230712-081014.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12386337.png">image-20230712-081346.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12386343.png">image-20230712-083123.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12779524.png">image-20230712-083123.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12877826.png">image-20230712-083615.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12550160.png">image-20230712-090404.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12582916.png">image-20230712-090404.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12386354.png">image-20230712-090542.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12320784.png">image-20230712-090547.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12910593.png">image-20230712-090636.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12910599.png">image-20230712-090732.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/13008898">Invalid file id - 0a80bedf-0893-4b42-8c7f-90df65f75a06</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12877832.png">image-20230712-092932.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/12386317/12419085.png">image-20230712-093031.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Nov 13, 2023 16:37</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>
